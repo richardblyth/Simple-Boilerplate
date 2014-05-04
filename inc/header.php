@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
     	<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -44,8 +48,6 @@
         <link href="css/vendor/foundation.min.css" rel="stylesheet" type="text/css" /> 
         <link href="css/default.css" rel="stylesheet" type="text/css" />        
         <link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
-        <!--[if IE 9]><link href="css/ie9.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-        <!--[if IE 10]><link href="css/ie10.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
         
         <script type="text/javascript" src="js/vendor/modernizr.js"></script>		
 	
