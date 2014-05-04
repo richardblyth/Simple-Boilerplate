@@ -1,0 +1,58 @@
+HTML5 Responsive Boilerplate
+Version 1.2
+Author: Richard Blyth
+Credit: Partly based on the HTML5 Boilerplate, html5boilerplate.com
+
+Revision History
+
+28 Aug 2013
+Conversion to HTML5
+Removed IE6 Scripts
+Changed HTML5Shiv to Google Code
+Changed jQuery to 1.7
+Fixed Clearfix CSS
+
+
+18 Dec 2013
+Changed to jQuery 1.9.1
+Removed IE8
+Added IE10 CSS
+Tidied up CSS
+Added Bing and Google auth files
+Added the humans.txt file template
+Added main.js
+Added plugins.js and /vendor directory for plugins
+Removed /inc/scripts.php - redundant
+Added browsehappy script and CSS for <IE7 users
+Replaced reset.css with normalize.css
+Removed mobile.css stylesheets, implemented in-line media queries
+Re-ordered META tags
+Added privacy.php template
+Added accessibility.php template
+Added contact.php template
+Resolved CSS issues
+Updated Clearfix
+
+
+30 Jan 2014
+Changed Skip Navigation to #startpage div
+Updated humans.txt
+
+
+03 Feb 2014
+Added http://uniformjs.com/ script for Form Styling.
+Replaced HTML5 Shiv with Modernizr
+Removed Handheldfriendly Meta - not valid
+Updated normalize.css to v3.0.0 and minified
+Re-ordered CSS
+
+
+21 Mar 2014
+Removed Uniform
+Integrated Foundation 5.1.1 and converted layout to responsive 12 column grid
+Add "_Source" directories for Non-minified CSS and JS
+Deleted navigation.php and put Nav back in header.php
+Moved Scripts to Footer (except modernizr)
+Swapped jQuery to a local copy of 2.1.0 in /js/vendor
+Made plugins.js / mains.js optional
+Integrated responsive menu

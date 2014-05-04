@@ -1,0 +1,26 @@
+# TEAM
+
+    Developer: PVAPPS
+    Contact: digital [at] pvapps.co.uk
+    Twitter: @pvapps
+    From: Leeds, West Yorkshire, United Kingdom
+    
+    Designer: Chris Carroll, PVAPPS
+    Developer: Richard Blyth, PVAPPS
+
+# THANKS
+
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css 3.0.0
+    Foundation 5.1.1
+    jQuery 2.1.0
+    Modernizr 2.7.1
+
+# SITE
+	
+	Last update: 2014/03/21
+	Language: English
+	Doctype: HTML5
