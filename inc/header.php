@@ -42,10 +42,7 @@
 		<meta name="ICBM" content="50.167958, -97.133185" />-->
 		<!--/Geo-->
         
-        <link rel="shortcut icon" href="favicon.ico" />
-        
-        <link href="css/vendor/normalize.css" rel="stylesheet" type="text/css" />
-        <link href="css/vendor/foundation.min.css" rel="stylesheet" type="text/css" /> 
+        <link rel="shortcut icon" href="favicon.ico" />       
         <link href="css/default.css" rel="stylesheet" type="text/css" />        
         <link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
         
