@@ -7,4 +7,4 @@ Disallow: /lib/
 Disallow: /media
 Disallow: /accessibility.php
 Disallow: /privacy.php
-Sitemap: http://www.pvapps.co.uk/Sitemap.xml
+Sitemap: /Sitemap.xml

@@ -1,78 +1,74 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie10 lt-ie9" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-    <head>
-    	<!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-               
-		<?php
-		$path = $_SERVER['PHP_SELF'];
-		$page = basename($path);
-		$page = basename($path, '.php');
-		?>
+<?php
+  /* Setup current page script
+  Usage: if($currentpage) == 'x' { do something */
+  $path = $_SERVER['PHP_SELF'];
+  $currentpage = basename($path);
+  $currentpage = basename($path, '.php');
+?>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js lt-ie10" lang="en"><![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+  <head>
 
-		<?php include_once("meta-data.php"); ?>
-		
-		<!-- Facebook OG -->
-		<!--<meta property="og:title" content="COMPANY" />
-		<meta property="og:type" content="company" />
-		<meta property="og:site_name" content="COMPANY" />
-		<meta property="fb:admins" content="878845157" />
-		<meta property="og:url" content="http://www.facebook.com/" />
-		<meta property="og:image" content="img/apple-touch-icon.png" />-->
-		<!--/Facebook OG-->
-        
-        <meta name="viewport" content="width=device-width" />
-        <link href="img/splash.png" rel="apple-touch-startup-image" />
-        <link href="img/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon-precomposed" />
-        <link href="img/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon-precomposed" />
-        <link href="img/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon-precomposed" />
-        <link href="img/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon-precomposed" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />		
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />  
-		
-		<!--Geo-->
-		<!--<meta name="geo.position" content="50.167958;-97.133185" />
-		<meta name="geo.placename" content="Rockwood Rural Municipality, Manitoba, Canada" />
-		<meta name="geo.region" content="en-gb" />
-		<meta name="ICBM" content="50.167958, -97.133185" />-->
-		<!--/Geo-->
-        
-        <link rel="shortcut icon" href="favicon.ico" />       
-        <link href="css/default.css" rel="stylesheet" type="text/css" />        
-        <link href="css/print.css" rel="stylesheet" type="text/css" media="print" />
-        
-        <script type="text/javascript" src="js/vendor/modernizr.js"></script>		
-	
-		<!--GA Code--><!--/GA Code-->
-    </head>
+    <title>Richard Blyth - Website Boilerplate</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <meta name="robots" content="no index, follow">
+    <meta name="description" content="A simple website boilerplate built on HTML5 and PHP using jQuery and Zurb Foundation">
+
+    <link rel="canonical" href="http://www.richardblyth.com">
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="img/speeddial-160px.png">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57x57-precomposed.png">
+
+    <!-- Apple Touch -->
+    <!--<link rel="apple-touch-startup-image" href="img/splash.png" >
+    <meta name="apple-mobile-web-app-capable" content="yes">    
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">-->
+
+    <!-- Facebook OG -->
+    <!--<meta property="og:title" content="COMPANY">
+    <meta property="og:type" content="company">
+    <meta property="og:site_name" content="COMPANY">
+    <meta property="fb:admins" content="878845157">
+    <meta property="og:url" content="http://www.facebook.com/">
+    <meta property="og:image" content="img/apple-touch-icon.png">-->
+    <!--/Facebook OG-->
+
+    <!--Geo-->
+    <!--<meta name="geo.position" content="50.167958;-97.133185">
+    <meta name="geo.placename" content="Rockwood Rural Municipality, Manitoba, Canada" />
+    <meta name="geo.region" content="en-gb">
+    <meta name="ICBM" content="50.167958, -97.133185">-->
+    <!--/Geo-->
+
+    <link rel="stylesheet" href="css/vendor/foundation.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr.js"></script>  
+  </head>
+
+  <body>
+    <a class="hide" accesskey="1" href="#startpage" title="Skip the navigation">Skip the navigation</a>
     
-    <body>
-        <a href="#startpage" class="hide" title="Skip Navigation" accesskey="1">Skip Navigation</a>
-               
-        <header>
-        	<div class="contain-to-grid">        	
-        		<nav class="top-bar" data-topbar>
-        			<ul class="title-area">
-    					<li class="name">
-      						<h1><a href="#" id="logo">My Site</a></h1>
-    					</li>
-    					<li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
-  					</ul>
-  					<section class="top-bar-section">
-  						<ul class="left">
-                			<li><a href="#" title="Home" accesskey="2">Home</a></li>
-                			<li><a href="#" title="About" accesskey="3">About</a></li>
-                			<li><a href="#" title="Section" accesskey="4">Section</a></li>
-                			<li><a href="#" title="Contact" accesskey="5" <?php if($page == 'contact'): ?>class="active"<?php endif ?>>Contact</a></li>
-               	 		</ul>
-               	 	</section>
-            	</nav>  
-            </div>	
-		</header>
+    <header>
+      <div class="row">
+        <div class="small-12 medium-12 large-12 columns">Site Logo</div>
+      </div>
+
+      <nav class="row">
+        <ul class="small-12 medium-12 large-12 columns">
+          <li><a href="#" title="The page">The page</a></li>
+        </ul>
+      </nav>
+    </header>
 			
 		<div id="startpage"></div>
